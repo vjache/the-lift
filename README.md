@@ -8,7 +8,7 @@
 выбирается следующее состояние и т.д. .
 
 ## Стейт машина
-
+```
 Rest 
     --> OpenCloseDoors
     --> MoveOneFloorDown
@@ -23,4 +23,4 @@ MoveOneFloorDown
     --> MoveOneFloorDown
     --> MoveOneFloorUp
     --> OpenCloseDoors
-  
+```
