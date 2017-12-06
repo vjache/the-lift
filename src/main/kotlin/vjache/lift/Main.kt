@@ -9,8 +9,10 @@ fun main(args: Array<String>) {
     Args.parseArgs(args)
 
     if (args.isEmpty()) {
-        println("Hello! This is a Lift simulator.")
-        println("The usage is like: ")
+        println("\n--------------------------------------")
+        println(" Hello! This is a Lift simulator.")
+        println("--------------------------------------")
+        println("\nThe usage is like: ")
         println("\tjava -jar the-lift<VSN>.jar -s2 -f10 -h2.5 -o5")
         println("where:")
         println("\t-sFLOAT  -- lift speed in meters pers second")
@@ -25,7 +27,9 @@ fun main(args: Array<String>) {
         println("\t${Args.instance}")
     }
 
-    println("Lift is in rest at 0 floor. Enter bellow e.g. 'e0'.")
+    println("\nLift is in rest at 0 floor.")
+    println("Enter 'eN' to simulate external lift call by a man on floor N.")
+    println("Enter 'iN' to simulate floor N button push by a man inside lift.")
 
     // Create lift
     val lift = Lift()
